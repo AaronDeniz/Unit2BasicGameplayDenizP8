@@ -8,6 +8,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 20;
     private float spawnPosZ = 20;
     private float spawnInterval = 1.5f;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -27,4 +28,6 @@ public class SpawnManager : MonoBehaviour
 
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
+
+    
 }
